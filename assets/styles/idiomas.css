@@ -1,0 +1,35 @@
+
+.idiomas li {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.idiomas li::before {
+    content: '';
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../imagens/check.svg');
+    width: 10px;
+    height: 10px;
+    margin-right: 0.5em;
+}
+
+@media screen and (min-width: 768px) {
+
+    .idiomas {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+}

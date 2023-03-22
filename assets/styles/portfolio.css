@@ -1,0 +1,50 @@
+
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    margin-left: 0.5em;
+    padding: 0;
+    list-style: none;
+}
+
+.portfolio-titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 0.3em;
+}
+
+.portfolio-titulo::before {
+    content: '';
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../imagens/icon-github.svg');
+    width: 15px;
+    height: 15px;
+    margin-right: 0.5em;
+}
+
+.portfolio li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 1em;
+}
+
+.portfolio li a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.portfolio li a:hover {
+    text-decoration: underline;
+}
+
